@@ -27,7 +27,6 @@ btn2.addEventListener('click', ()=>{
     }
 })
 
-*/
 
 // Remove Event Listener
 // To remove we must have same function and type of event and also element
@@ -38,3 +37,38 @@ function changeBg(){
 document.addEventListener("click" , changeBg);
 
 document.removeEventListener("click" , changeBg)
+
+
+*/
+
+
+// the meaning of "false" in the third argument is Not in the capturing phase
+/*
+    If the third argument is not Given or False then execution :-
+        target event ---> upper event/below event
+
+    And if third argument is True :-
+        upper event/below event  ---> target event
+*/
+
+const button = document.getElementById("btn1");
+button.addEventListener('click',function (){
+    document.getElementById("heading").style.color = "red";
+    console.log("Button 1 clicked");
+}, true)
+
+document.addEventListener('click',function(){
+    console.log("Document clicked");
+},true)
+
+
+// Event object
+// the function got an event object
+// In the below the "e" is object and we can use all the properties and mehods of it.
+
+const button2 = document.getElementById("btn2");
+button2.addEventListener("click", function(e){
+    console.log(e);  // printing object
+    e.preventDefault();  
+    // the preventDefault method is preventing
+}, false)
