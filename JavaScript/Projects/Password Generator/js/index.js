@@ -82,11 +82,6 @@ function generateSymbol() {
   return symbolArr[randIndx];
 }
 
-// console.log("Number: ", generateRandomNumber());
-// console.log("Lowercase: ", generateLowerCase());
-// console.log("Uppercase: ", generateUpperCase());
-// console.log("Symbols: ", generateSymbol());
-
 // Shuffle the array randomly - Fisher Yates Method
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {

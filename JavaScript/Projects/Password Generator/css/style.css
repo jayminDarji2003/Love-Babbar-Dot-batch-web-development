@@ -22,7 +22,6 @@ button {
 
     --vb-yellow: hsl(52, 100%, 62%);
 
-
     --pl-white: hsl(0, 0%, 100%);
 
     --vb-cyan: hsl(176, 100%, 44%);
@@ -63,7 +62,6 @@ h1 {
     margin: 1rem 0;
     padding-top: 0.35rem;
     border-bottom: 0.35rem solid var(--lt-violet2);
-
 }
 
 .display {
